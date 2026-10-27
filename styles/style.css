@@ -60,6 +60,19 @@ h1{
   transition: all 0.1s ease;
 }
 
+.Button_Online_Game{
+  
+  background-color: azure;
+  color: blueviolet;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 24px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  
+}
+
 
 
 
@@ -86,6 +99,13 @@ h1{
 
 
 .Button_News:active {
+  
+  background-color: aliceblue;
+  animation: Buttons_On_Click 0.5s ease-in-out;
+  
+}
+
+.Button_Online_Game:active {
   
   background-color: aliceblue;
   animation: Buttons_On_Click 0.5s ease-in-out;

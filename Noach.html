@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sezhmon Noach</title>
+  
+  <script src="tools/p5js/p5.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    let x = 30;
+    let y = 24;
+    let ENM_X, ENM_Y;
+    let MX, MY;
+    let Time_X = 0;
+    let Time_Y = 1000;
+
+    function setup() {
+      createCanvas(windowWidth, windowHeight);
+      noFill();
+      ENM_X = random(50, width - 50);
+      ENM_Y = random(50, height - 50);
+    }
+
+    function draw() {
+      background(255, 255, 255, 10);
+
+      Time_X += 0.05;
+      Time_Y += 0.05;
+
+      ENM_X += (noise(Time_X) - 0.5) * 4;
+      ENM_Y += (noise(Time_Y) - 0.5) * 4;
+
+      ENM_X = constrain(ENM_X, 50, width - 50);
+      ENM_Y = constrain(ENM_Y, 50, height - 50);
+
+      stroke(255, 0, 100);
+      circle(ENM_X, ENM_Y, 50);
+
+      let x_tO_X = dist(x, y, ENM_X, ENM_Y);
+      if ((25 + 12) > x_tO_X) {
+        ENM_X = random(50, width - 50);
+        ENM_Y = random(50, height - 50);
+      }
+
+      MX = mouseX;
+      MY = mouseY;
+
+      stroke(0);
+      circle(x, y, 24);
+
+      if (x < MX) { x += 1; }
+      if (x > MX) { x -= 1; }
+      if (y < MY) { y += 1; }
+      if (y > MY) { y -= 1; }
+    }
+
+    function windowResized() {
+      resizeCanvas(windowWidth, windowHeight);
+    }
+  </script>
+
+</body>
+</html>
