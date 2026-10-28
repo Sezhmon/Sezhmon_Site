@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sezhmon Roses</title>
+  
+  <script src="tools/p5js/p5.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    let step = 1;
+    let k;
+    let Added;
+    let Loaded_Time;
+    let Rose_Shape;
+
+    function setup() {
+      createCanvas(windowWidth, windowHeight);
+      angleMode(DEGREES);
+      strokeWeight(3);
+      stroke("white");
+      noFill();
+
+      k = int(random(1, 12)) / int(random(1, 12));
+      Added = random(0.00009, 0.0003)
+      Rose_Shape = int(random(3));
+    }
+
+    function draw() {
+      background(10);
+      translate(width / 2, height / 2);
+      
+      Loaded_Time = millis();
+      
+      if (Loaded_Time >= 5000) {
+            k += 0.00006;
+
+            if (Loaded_Time > 5000000) {
+              noLoop();
+            }
+          }
+
+      if (Rose_Shape === 0) {
+        beginShape();
+        for (let t = 0; t < 360 * 24; t += step) {
+          let r = 150 * cos(k * t);
+          let x = r * cos(t);
+          let y = r * sin(t);
+            
+          vertex(x, y);
+        }
+        endShape(CLOSE);
+      }
+      else if (Rose_Shape === 1) {
+        for (let t = 0; t < 360 * 24; t += step) {
+          let r = 150 * cos(k * t);
+          let x = r * cos(t);
+          let y = r * sin(t);
+          
+          circle(x, y, 0.8);
+        }
+      }
+      else if (Rose_Shape === 2) {
+        for (let t = 0; t < 360 * 24; t += step) {
+          let r = 150 * cos(k * t);
+          let x = r * cos(t);
+          let y = r * sin(t);
+          
+          point(x, y);
+        }
+      }
+    }
+
+    function windowResized() {
+      resizeCanvas(windowWidth, windowHeight);
+    }
+  </script>
+
+</body>
+</html>

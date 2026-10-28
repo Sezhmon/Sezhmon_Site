@@ -62,7 +62,7 @@ h1{
 
 .Button_Online_Game{
   
-  background-color: azure;
+  background-color: lightcyan;
   color: blueviolet;
   padding: 5px 10px;
   border: none;
@@ -71,6 +71,26 @@ h1{
   cursor: pointer;
   transition: all 0.1s ease;
   
+}
+
+
+
+.Button_Random{
+  
+  background-color: ghostwhite;
+  color: chartreuse;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  
+}
+
+.Text_Sezhmon{
+  
+  font-size: 4vw;
 }
 
 
@@ -106,6 +126,13 @@ h1{
 }
 
 .Button_Online_Game:active {
+  
+  background-color: aliceblue;
+  animation: Buttons_On_Click 0.5s ease-in-out;
+  
+}
+
+.Button_Random:active {
   
   background-color: aliceblue;
   animation: Buttons_On_Click 0.5s ease-in-out;
