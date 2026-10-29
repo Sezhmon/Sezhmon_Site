@@ -39,8 +39,8 @@
       Time_X += 0.05;
       Time_Y += 0.05;
 
-      ENM_X += (noise(Time_X) - 0.5) * 4;
-      ENM_Y += (noise(Time_Y) - 0.5) * 4;
+      ENM_X += (noise(Time_X) - 0.5) * 8;
+      ENM_Y += (noise(Time_Y) - 0.5) * 8;
 
       ENM_X = constrain(ENM_X, 50, width - 50);
       ENM_Y = constrain(ENM_Y, 50, height - 50);
