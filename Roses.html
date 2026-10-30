@@ -24,6 +24,7 @@
     let Added;
     let Loaded_Time;
     let Rose_Shape;
+    let Ch;
 
     function setup() {
       createCanvas(windowWidth, windowHeight);
@@ -31,9 +32,19 @@
       strokeWeight(3);
       stroke("white");
       noFill();
+      
+      Ch = random(2)
+      
+      if (Ch >= 1){
 
       k = int(random(1, 12)) / int(random(1, 12));
-      Added = random(0.0002, 0.0006)
+      }
+      
+      else{
+        
+        k = int(random(1, 12))
+      }
+      Added = random(0.0004, 0.0009)
       Rose_Shape = int(random(3));
     }
 
