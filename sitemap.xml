@@ -3,36 +3,26 @@
   
   <url>
     <loc>https://sezhmon.github.io/Sezhmon_Site/</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://sezhmon.github.io/Sezhmon_Site/projects.html</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://sezhmon.github.io/Sezhmon_Site/news.html</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://sezhmon.github.io/Sezhmon_Site/Noach.html</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
   
   <url>
     <loc>https://sezhmon.github.io/Sezhmon_Site/Roses.html</loc>
-    <lastmod>2026-10-26</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
 
