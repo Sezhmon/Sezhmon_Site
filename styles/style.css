@@ -50,26 +50,28 @@ h1{
 
 .Button_Project{
   
-  background-color: azure;
-  color: cornflowerblue;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 10px;
+  font-family: 'Noto Serif', Roboto ,Arial;
+  background-color: #432BC2;
+  color: #47B2B5;
+  padding: 15px 24px;
+  border: 1px;
+  border-radius: 24px;
   font-size: 24px;
+  box-shadow: 0 0 15px rgba(60, 159, 255, 0.8);
   cursor: pointer;
-  transition: all 0.1s ease;
+  transition: all 0.3s ease;
 }
 
 .Button_Online_Game{
   
-  background-color: lightcyan;
-  color: blueviolet;
+  background-color: #B53F82;
+  color: #BCC427;
   padding: 5px 10px;
-  border: none;
+  border: 1px;
   border-radius: 24px;
-  font-size: 24px;
+  font-size: 20px;
   cursor: pointer;
-  transition: all 0.1s ease;
+  transition: all 0.2s ease;
   
 }
 
