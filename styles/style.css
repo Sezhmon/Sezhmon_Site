@@ -9,14 +9,13 @@ body{
   
 }
 
-.Main_Button{
+.Main_Text{
   
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 20px;
-  
+  font-family: Arial, Roboto;
+  color: blue;
 }
+
+
 
 h1{
   
@@ -32,18 +31,18 @@ h1{
 
 .Button_News{
   
-  background-color: white;
-  color: cornflowerblue;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 10px;
+  font-family: 'Noto Serif', Roboto ,Arial;
+  background: linear-gradient(100deg, black, orange);
+  color: red;
+  padding: 12px 18px;
+  border: aliceblue;
+  border-radius: 30px;
   font-size: 18px;
+  box-shadow: 0 0 15px rgba(150, 80, 70, 0.8);
   cursor: pointer;
-  transition: all 0.1 ease;
+  transition: all 0.3 ease;
   
-  width: 90%;
-  max-width: 200px;
-  min-width: 100px;
+  width: 100%;
   
   
 }
@@ -51,8 +50,8 @@ h1{
 .Button_Project{
   
   font-family: 'Noto Serif', Roboto ,Arial;
-  background-color: #432BC2;
-  color: #47B2B5;
+  background: linear-gradient(135deg, #432BC2, #13D0E8);
+  color: darkturquoise;
   padding: 15px 24px;
   border: 1px;
   border-radius: 24px;
@@ -64,14 +63,16 @@ h1{
 
 .Button_Online_Game{
   
-  background-color: #B53F82;
-  color: #BCC427;
-  padding: 5px 10px;
-  border: 1px;
-  border-radius: 24px;
+  font-family: 'Noto Serif', Roboto ,Arial;
+  background: linear-gradient(135deg, blue, darkviolet);
+  color: blueviolet;
+  padding: 8px 15px;
+  border: aliceblue 1px;
+  border-radius: 40px;
   font-size: 20px;
+  box-shadow: 5px 3px 15px rgba(60, 120, 255, 0.8);
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   
 }
 
@@ -79,20 +80,31 @@ h1{
 
 .Button_Random{
   
-  background-color: ghostwhite;
-  color: chartreuse;
+  font-family: 'Noto Serif', Roboto ,Arial;
+  background: linear-gradient(135deg, green, aquamarine);
+  color: burlywood;
   padding: 12px 24px;
-  border: none;
+  border: 1px;
   border-radius: 50px;
   font-size: 24px;
+  box-shadow: 5px 3px 15px rgba(100, 200, 120, 0.8);
   cursor: pointer;
-  transition: all 0.1s ease;
+  transition: all 0.3s ease;
   
 }
 
 .Text_Sezhmon{
   
-  font-size: 4vw;
+  font-family: 'Noto Serif', Roboto ,Arial;
+  background: linear-gradient(180deg, cyan, blue);
+  color: aqua;
+  padding: 24px 35px;
+  border: 1px;
+  border-radius: 80px;
+  font-size: 24px;
+  box-shadow: 0 0 15px rgba(50, 100, 255, 0.8);
+  cursor: pointer;
+  transition: all 1s ease;
 }
 
 .Copy©{
@@ -142,6 +154,15 @@ h1{
 }
 
 .Button_Random:active {
+  
+  background-color: aliceblue;
+  animation: Buttons_On_Click 0.5s ease-in-out;
+  
+}
+
+
+
+.Text_Sezhmon:active {
   
   background-color: aliceblue;
   animation: Buttons_On_Click 0.5s ease-in-out;
