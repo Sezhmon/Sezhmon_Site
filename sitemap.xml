@@ -25,5 +25,10 @@
     <loc>https://sezhmon.github.io/Sezhmon_Site/Roses.html</loc>
     <priority>0.65</priority>
   </url>
+  
+   <url>
+    <loc>https://sezhmon.github.io/Sezhmon_Site/Sezhmon_Terminal_Versions.html</loc>
+    <priority>0.65</priority>
+  </url>
 
 </urlset>
