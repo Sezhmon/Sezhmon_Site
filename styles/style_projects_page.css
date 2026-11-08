@@ -1,6 +1,35 @@
+body{
+  
+  background: linear-gradient(100deg, blanchedalmond, coral);
+  font-family: 'Noto Serif', Arial, system-ui;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  
+}
+
+
+
 .Sezhmon_Text{
   
-  color: black;
+  color: blue;
+}
+
+
+.Sezhmon_Terminal_World{
+  
+  font-family: 'Noto Serif', Roboto ,Arial;
+  background: linear-gradient(100deg, aqua, cornsilk);
+  color: darkcyan;
+  padding: 24px 35px;
+  border: aliceblue;
+  border-radius: 50px;
+  font-size: 24px;
+  box-shadow: 0 0 15px rgba(30, 120, 180, 0.8);
+  cursor: pointer;
+  transition: all 0.3 ease
+  
 }
 
 .Sezhmon_Terminal_Text{
@@ -26,7 +55,7 @@
 
 
 
-.Sezhmon_Terminal_Class:active {
+.Sezhmon_Terminal_World:active {
   
   animation: Buttons_On_Click 0.5s ease-in-out;
   

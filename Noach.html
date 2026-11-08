@@ -28,6 +28,8 @@
     let MX, MY;
     let Time_X = 0;
     let Time_Y = 1000;
+    let Score = 0;
+    let Speed = 8;
 
     function setup() {
       createCanvas(windowWidth, windowHeight);
@@ -42,8 +44,8 @@
       Time_X += 0.05;
       Time_Y += 0.05;
 
-      ENM_X += (noise(Time_X) - 0.5) * 8;
-      ENM_Y += (noise(Time_Y) - 0.5) * 8;
+      ENM_X += (noise(Time_X) - 0.5) * Speed;
+      ENM_Y += (noise(Time_Y) - 0.5) * Speed;
 
       ENM_X = constrain(ENM_X, 50, width - 50);
       ENM_Y = constrain(ENM_Y, 50, height - 50);
@@ -55,6 +57,10 @@
       if ((25 + 12) > x_tO_X) {
         ENM_X = random(50, width - 50);
         ENM_Y = random(50, height - 50);
+        
+        Score += 1;
+        Speed += Score * ;
+        
       }
 
       MX = mouseX;

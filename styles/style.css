@@ -1,6 +1,6 @@
 body{
   
-  background-color: #a5bde8;
+  background: linear-gradient(24deg, cyan, deepskyblue);
   font-family: Arial;
   display: flex;
   flex-direction: column;
