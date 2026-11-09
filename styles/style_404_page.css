@@ -1,0 +1,39 @@
+.Error_404_Text{
+  
+  font-family: Arial, Roboto;
+  color: blue;
+  
+}
+
+.Back_Root_Button{
+  
+  font-family: 'Noto Serif', Roboto ,Arial;
+  background: linear-gradient(100deg, blue, yellow);
+  color: blue;
+  padding: 50px 80px;
+  border: aliceblue;
+  border-radius: 50px;
+  font-size: 24px;
+  box-shadow: 0 0 15px rgba(150, 80, , 0.8);
+  cursor: pointer;
+  transition: all 0.3 ease;
+  
+}
+
+
+@keyframes Buttons_On_Click {
+  
+  0% { transform: scale(1); filter: brightness(24);}
+  50% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+  
+  
+}
+
+
+.Back_Root_Button:active {
+  
+  background-color: aliceblue;
+  animation: Buttons_On_Click 0.5s ease-in-out;
+  
+}

@@ -59,6 +59,8 @@ h1{
   box-shadow: 0 0 15px rgba(60, 159, 255, 0.8);
   cursor: pointer;
   transition: all 0.3s ease;
+  
+  width: 100%;
 }
 
 .Button_Online_Game{
@@ -73,6 +75,8 @@ h1{
   box-shadow: 5px 3px 15px rgba(60, 120, 255, 0.8);
   cursor: pointer;
   transition: all 0.3s ease;
+  
+  width: 100%;
   
 }
 
@@ -90,6 +94,8 @@ h1{
   box-shadow: 5px 3px 15px rgba(100, 200, 120, 0.8);
   cursor: pointer;
   transition: all 0.3s ease;
+  
+  width: 100%;
   
 }
 
